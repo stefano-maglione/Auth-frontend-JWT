@@ -1,0 +1,108 @@
+/* Main Container Styling */
+.container {
+  max-width: 1000px;
+}
+
+/* Card Styling with Enhanced Transparency and Shadow */
+.card {
+  border-radius: 20px;
+  background: linear-gradient(
+    115deg,
+    rgba(122, 123, 122, 0.6),
+    rgba(122, 123, 122, 0)
+  ); /* Light green gradient with transparency */
+  box-shadow: 0 8px 20px rgba(243, 239, 239, 0.15); /* Stronger shadow for better depth */
+  padding: 40px;
+  border: none;
+  backdrop-filter: blur(50px); /* Glass effect */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Button Styles */
+.btn-success {
+  background-color: #28a745; /* Green primary color */
+  border: none;
+  font-weight: bold;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+/* Error Message Styling */
+.text-danger {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #d9534f; /* Bootstrap red for contrast */
+}
+
+/* Input Field Styling */
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition:
+    border-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  font-size: 1rem;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
+}
+
+/* Placeholder Styling */
+::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Link Styling */
+a.text-decoration-none {
+  color: #28a745;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+a.text-decoration-none:hover {
+  color: #1e7e34;
+  text-decoration: underline;
+}
+
+/* Heading Styles */
+h2,
+h3 {
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* smaller screens */
+@media (max-width: 768px) {
+  .card {
+    padding: 25px;
+  }
+
+  .btn-success {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+}

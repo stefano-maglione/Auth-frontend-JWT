@@ -1,0 +1,31 @@
+/* Make app-root take full height */
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Allow content to stretch but keep footer at the bottom */
+main {
+  flex: 1;
+}
+
+/* Theme Switcher Styling */
+.theme-switcher {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.header-container {
+  position: relative;
+}
+
+.header-image img {
+  width: 200px; /* Adjust size as needed */
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 10px;
+}

@@ -1,0 +1,23 @@
+/* Apply a stylish transparent gradient background with an image */
+body {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(18, 131, 20, 0.5),
+    rgba(25, 206, 5, 0.3)
+  );
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-attachment: fixed;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+h2,
+h3 {
+  color: #ffffff !important; /* Ensure white text color */
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}

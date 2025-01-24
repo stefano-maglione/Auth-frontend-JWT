@@ -1,0 +1,51 @@
+/* Card Styling with Background Image */
+.card {
+  border-radius: 20px;
+  background: url("/assets/images/background.png") no-repeat center center;
+  background-size: cover; /* Adjust image size to cover the card */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Shadow for better depth */
+  padding: 80px;
+  border: none;
+  backdrop-filter: blur(20px); /* Glass effect */
+  transition: all 0.3s ease-in-out;
+  color: #f00c0c; /* Ensure text visibility on the image */
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-success {
+  background-color: #28a745; /* Green primary color */
+  border: none;
+  font-weight: bold;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+/* Text Styling */
+h1,
+p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    padding: 25px;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

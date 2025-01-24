@@ -1,0 +1,11 @@
+
+services:
+  angular-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: auth-frontend:latest
+    container_name: auth-frontend
+    ports:
+      - "80:80"
+    restart: unless-stopped

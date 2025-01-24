@@ -1,0 +1,26 @@
+<!-- Header / Navigation -->
+<header class="text-white py-3 header-container">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="header-image">
+      <img
+        [src]="
+          isDarkMode
+            ? 'assets/images/moon.png'
+            : 'assets/images/sun_background.png'
+        "
+        alt="Sun Icon"
+        class="img-fluid"
+      />
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main class="container py-5">
+  <router-outlet></router-outlet>
+</main>
+
+<!-- Footer -->
+<footer class="text-dark text-center py-3 mt-5">
+  © 2025 Stefano Maglione
+</footer>
