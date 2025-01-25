@@ -21,3 +21,17 @@ h3 {
   font-weight: bold;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
+
+[data-bs-theme="dark"] .form-control {
+  background-color: #333 !important;
+  color: #fff !important;
+  border-color: #555 !important;
+}
+
+[data-bs-theme="dark"] .form-label {
+  color: #fff !important;
+}
+
+[data-bs-theme="dark"] .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
